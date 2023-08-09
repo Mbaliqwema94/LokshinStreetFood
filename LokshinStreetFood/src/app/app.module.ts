@@ -12,11 +12,8 @@ import { LandingComponent } from './components/landing/landing.component';
 import { CartComponent } from './components/cart/cart.component';
 import { LoginComponent } from './components/login/login.component';
 import { ChatsComponent } from './components/chats/chats.component';
-import { registerLocaleData } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
 
 
 @NgModule({
@@ -26,16 +23,19 @@ import { MatCardModule } from '@angular/material/card';
    
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-   
-
-  
-  ],
+ BrowserModule,
+ NgModule,
+ AppRoutingModule,
+ RegisterComponent,
+ LoginComponent,
+ HomeComponent,
+ OrdersComponent,
+ OrderstatusComponent,
+ ChatsComponent,
+ LandingComponent,
+CartComponent,
+NavbarComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })
